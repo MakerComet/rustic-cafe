@@ -1,4 +1,4 @@
-# MakerComet's Rustic Cafe
+# Rustic Cafe
 
 **Unity 6 WebGL Experience by MakerComet**
 

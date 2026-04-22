@@ -254,16 +254,8 @@
                     return { type: 'professional', isProduction: true, projectId: 'unreality3d', creatorUsername, projectName, urlFormat: 'path_based' };
                 }
             }
-            if (hostname.endsWith('.unreality3d.com') && hostname !== 'unreality3d.com') {
-                const creatorUsername = hostname.replace('.unreality3d.com', '');
-                const projectName = pathname.split('/').filter(p => p.length > 0)[0] || 'main';
-                gtag('event', 'creator_project_visit', { creator_name: creatorUsername, project_name: projectName, content_type: 'unity_webgl', url_format: 'subdomain' });
-                return { type: 'professional', isProduction: true, projectId: 'unreality3d', creatorUsername, projectName, urlFormat: 'subdomain' };
-            }
             if (hostname.includes('unreality3d.web.app') || hostname.includes('unreality3d.firebaseapp.com'))
                 return { type: 'firebase', isProduction: true, projectId: 'unreality3d' };
-            if (hostname.includes('unreality3d2025.web.app') || hostname.includes('unreality3d2025.firebaseapp.com'))
-                return { type: 'firebase', isProduction: false, projectId: 'unreality3d2025' };
             if (hostname.includes('github.io'))
                 return { type: 'github-pages', isProduction: true, projectId: 'unreality3d' };
             return { type: 'creator', isProduction: true, projectId: 'unreality3d' };
@@ -534,11 +526,11 @@
             }
 
             var buildUrl = "Build";
-            var loaderUrl = buildUrl + "/977fc66ed74e319a41dcb8cc9128415f.loader.js?v=1776484428767";
+            var loaderUrl = buildUrl + "/c6065f97b16bf76fb633c00f5097a92b.loader.js?v=1776894365366";
             var config = {
-                dataUrl: buildUrl + "/b5ab142ab65a3264edc1a32c27373a1d.data?v=1776484428767",
-                frameworkUrl: buildUrl + "/f6c0aa96421f25d69cd29f2bd532f68f.framework.js?v=1776484428767",
-                codeUrl: buildUrl + "/9f50da5fd1540c2e636b25dde78ebe37.wasm?v=1776484428767",
+                dataUrl: buildUrl + "/149546c2a3d777504d3f75ce6ee87cb1.data?v=1776894365366",
+                frameworkUrl: buildUrl + "/f6c0aa96421f25d69cd29f2bd532f68f.framework.js?v=1776894365366",
+                codeUrl: buildUrl + "/53b06500a5272d933262f1858963b081.wasm?v=1776894365366",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "MakerComet",
                 productName: "MakerComet's Rustic Cafe",
